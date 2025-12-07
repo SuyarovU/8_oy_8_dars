@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!2jwc4nq@=r6o##**@1dvjtkyzj^pz!5x$@xv6z=^v)^dqij^-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["165.22.71.53",'localhost']
 
@@ -132,4 +132,6 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
+
+STATIC_ROOT = '/var/www/8_oy_8_dars/staticfiles'
 
