@@ -13,5 +13,5 @@ urlpatterns = [
     path("auth/refresh/", TokenRefreshView.as_view(), name='refresh-jwt'),
     path("auth/register/", views.RegisterView.as_view()),
     path('auth/schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('auth/docs/', SpectacularSwaggerView.as_view(), name='swagger-ui'),
+    path('auth/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
 ]
